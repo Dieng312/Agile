@@ -1,6 +1,4 @@
-package Bluej;
-
-import java.util.ArrayList;
+package classes;
 
 public class Salle
 {

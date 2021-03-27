@@ -1,4 +1,4 @@
-package Bluej;
+package classes;
 
 import java.util.ArrayList;
 

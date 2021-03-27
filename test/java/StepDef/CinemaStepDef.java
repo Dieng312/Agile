@@ -1,7 +1,7 @@
 package StepDef;
 
-import Bluej.Cinema;
-import Bluej.Salle;
+import classes.Cinema;
+import classes.Salle;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 
