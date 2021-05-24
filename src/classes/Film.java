@@ -1,50 +1,42 @@
 package classes;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class Film {
 
+    private Salle salle;
+    private ArrayList<Animal> animals;
+    private ArrayList<String> horaires;
     private String name;
-    private int duration;
-    private Category category;
-    private final ArrayList<Seance> seances;
 
-    public Film() {
-        seances = new ArrayList<>();
+    public Film(String name){
+        this.name = name;
+        this.animals = new ArrayList<>();
+        this.horaires = new ArrayList<>();
     }
 
+    public List<Animal> getAnimals(){
+        return this.animals;
+    }
+    public Salle getSalle() {
+        return salle;
+    }
+    public List<String> getHoraires() {
+        return horaires;
+    }
     public String getName() {
         return name;
     }
-
+    public void setSalle(Salle salle) { this.salle = salle;}
     public void setName(String name) {
         this.name = name;
     }
 
-    public int getDuration() {
-        return duration;
+    public void addAnimal(Animal animal){
+        this.animals.add(animal);
     }
-
-    public void setDuration(int duration) {
-        this.duration = duration;
-    }
-
-    public Category getCategory() {
-        return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
-    }
-
-    public ArrayList<Seance> getSeances() {
-        return seances;
-    }
-    public void addSeance(Seance seance){
-        this.seances.add(seance);
-    }
-    public void rmvSeance(Seance seance){
-        this.seances.remove(seance);
+    public void addHoraire(String horaire){
+        this.horaires.add(horaire);
     }
 
 }

@@ -9,7 +9,7 @@ Feature: Creer un cinema
     Given un cinema
     And une salle de <n1> places et une autre de <n2> places
     When les salles sont ajoutees
-    Then le <total> des places de cinema est calcule
+    Then le total des places de cinema est <total>
 
     Examples:
       | n1 | n2 | total |

@@ -30,7 +30,7 @@ public class CinemaStepDef {
     }
 
 
-    @Then("le {int} des places de cinema est calcule")
+    @Then("le total des places de cinema est {int}")
     public void leTotalDesPlacesDeCinemaEstCalcule(Integer int1) {
         Assert.assertEquals(Integer.valueOf(int1), Integer.valueOf(this.cinema.getTotplaces()));
     }

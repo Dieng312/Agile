@@ -30,7 +30,7 @@ public class CinemaTest
     @AfterEach
     public void tearDown() // throws java.lang.Exception
     {
-        //Libérez ici les ressources engagées par setUp()
+
     }
 
     @Test
@@ -39,7 +39,7 @@ public class CinemaTest
         Cinema cinema1 = new Cinema();
         cinema1.setNom("UGC");
         cinema1.setVille("Bercy");
-        assertEquals("Ce cinéma s'appelle UGC et se trouve à Bercy", cinema1.showCinema());
+        assertEquals("Ce cinema s'appelle UGC et se trouve a Bercy", cinema1.showCinema());
     }
 
     @Test
@@ -51,7 +51,7 @@ public class CinemaTest
     @Test
     public void TestAfficheSalles()
     {
-        assertEquals("le cinéma contient 2 salles", cinema1.afficherSalles());
+        assertEquals("le cinema contient 2 salles", cinema1.afficherSalles());
     }
 }
 
